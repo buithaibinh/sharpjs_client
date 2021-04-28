@@ -1,6 +1,6 @@
 {
-  "name": "@skg-global/skg_sharp_client",
-  "version": "1.0.2",
+  "name": "@skg-global/sharp_client",
+  "version": "1.0.0",
   "description": "TBD",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
