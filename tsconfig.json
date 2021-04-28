@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "rootDir": "src",
     "declaration": true,
     "emitDecoratorMetadata": true,
     "esModuleInterop": true,
@@ -8,17 +7,16 @@
     "forceConsistentCasingInFileNames": true,
     "incremental": true,
     "module": "CommonJS",
-    "moduleResolution": "Node",
     "noImplicitAny": true,
     "noUnusedLocals": true,
-    "outDir": "./dist",
-    "sourceMap": true,
+    "outDir": "./lib",
+    "sourceMap": false,
     "strict": true,
     "strictNullChecks": true,
     "strictFunctionTypes": true,
     "strictPropertyInitialization": true,
     "target": "ES2019",
-    "lib": ["es6", "dom"]
+    "lib": ["es6", "dom"],
   },
   "include": ["src/**/*", "__tests__/**/*", "example/**/*", "__mocks__/**/*"]
 }

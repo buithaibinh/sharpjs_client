@@ -10,7 +10,7 @@ describe('Do test IT', () => {
         resize: { width: 200, fit: 'cover' },
       })
     ).toBe(
-      'http://example.com/baseeyJidWNrZXQiOiJzYW1wbGUtYnVja2V0Iiwia2V5IjoiZGVtby5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoyMDAsImZpdCI6ImNvdmVyIn19fQ=='
+      'http://example.com/base/eyJidWNrZXQiOiJzYW1wbGUtYnVja2V0Iiwia2V5IjoiZGVtby5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoyMDAsImZpdCI6ImNvdmVyIn19fQ=='
     );
   });
 });
