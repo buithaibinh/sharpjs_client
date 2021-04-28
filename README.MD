@@ -25,8 +25,8 @@ const fooUrl = client.url(originalImageUrl, options);
 
 Currently the following transformations can be applied to images:
 
-| Client option name | Query param name | Description |
-|--------------------|------------------|-------------|
+| Client option name | Description |
+|--------------------|-------------|
 | resize.width |
 | resize.height |
 | toFormat | Output image format. Valid values: every valid [sharp output format string](https://sharp.pixelplumbing.com/api-output#toformat), i.e. `jpeg`, `gif`, `webp`. |
