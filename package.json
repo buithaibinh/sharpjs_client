@@ -1,16 +1,27 @@
 {
   "name": "@skg-global/skg_sharp_client",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "TBD",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
-    "prepare": "tsc",
+    "prepare": "yarn run build",
+    "prepublishOnly": "yarn test && yarn run lint",
+    "preversion": "yarn run lint",
+    "version": "yarn run format && git add -A src",
+    "postversion": "git push && git push --tags",
     "build": "tsc --build tsconfig.build.json",
+    "prebuild": "yarn clean",
+    "clean": "rimraf lib",
     "watch": "tsc -w",
     "start": "ts-node src/index.ts",
+    "format": "prettier --write \"src/**/*.ts\"",
     "lint": "eslint --cache .",
     "test": "jest"
   },
+  "files": [
+    "lib/**/*"
+  ],
   "keywords": [],
   "author": "Binh Bui",
   "license": "ISC",

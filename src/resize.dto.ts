@@ -1,16 +1,16 @@
-import { fit, format } from './interfaces';
+import { fit, format } from "./interfaces";
 
-class Resize {
+export class Resize {
   constructor(args: Partial<Resize>) {
     Object.assign(this, args);
   }
 
   public height?: number;
   public width?: number;
-  public fit?: fit = 'cover';
+  public fit?: fit = "cover";
 }
 
-class SmartCrop {
+export class SmartCrop {
   constructor(args: Partial<SmartCrop>) {
     Object.assign(this, args);
   }
@@ -27,8 +27,6 @@ export class ResizeDto {
   public resize?: Resize;
   public toFormat?: format;
 
-  public quality?: number;
-
   // Flip the image about the vertical Y axis
   public rotate?: number;
 
@@ -39,5 +37,5 @@ export class ResizeDto {
   public flip?: boolean;
 
   // AWS
-  public smartCrop?: SmartCrop
+  public smartCrop?: SmartCrop;
 }
