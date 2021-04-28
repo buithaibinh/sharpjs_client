@@ -1,7 +1,5 @@
 /* eslint-disable no-unused-vars */
 import { inject, injectable } from 'tsyringe';
-import { URL } from 'url';
-import { Signer } from './interfaces';
 import btoa from 'btoa';
 import { ResizeDto } from './resize.dto';
 
